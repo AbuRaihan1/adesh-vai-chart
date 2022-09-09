@@ -3,10 +3,32 @@
   padding: 0;
 }
 
+/* purpose start  */
+.purpose {
+  border: 1px solid #F1F1F1;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.purpose h2{
+  color: #020344;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;  
+}
+
+.purpose p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #020344;
+  text-align: justify;
+}
+/* purpose end  */
+
 /* mission start */
 
 .mission {
-  border: 1px solid rgb(224, 222, 222);
+  border: 1px solid #F1F1F1;
   border-radius: 20px;
   padding: 20px 10px;
   margin: 20px 0;
@@ -21,23 +43,32 @@
   color: black;
   padding: 10px 0;
   font-size: 20px;
+  color: #020344;
+}
+
+.mission_title h2 {
+  color: #020344;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
 }
 .mission_title button {
   text-transform: uppercase;
   outline: none;
   font-size: 14px;
-  border: 2px solid black;
+  border: 2px solid #020344;
   background: transparent;
   border-radius: 50px;
   padding: 10px 25px;
   font-weight: bold;
   transition: all 0.2s ease-in-out;
+  color: #020344;
+  font-family: 'Lato', sans-serif;
 }
 
 .mission_title button:hover {
-  background: #080808;
+  background: #020344;
   color: white;
-  border: 2px solid rgb(12, 12, 12);
+  border: 2px solid #020344;
 }
 .inner_item_wrapper {
   margin-bottom: 20px;
@@ -45,7 +76,7 @@
 
 .mission_item {
   background: #020344;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
   color: white;
 }
@@ -53,6 +84,11 @@
 .mission_item p {
   color: #c08d26;
   font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mission_item h2{
+  font-family: 'Poppins', sans-serif;
 }
 
 .mission_item p:last-child {
@@ -72,11 +108,14 @@
 
 .inner_chart_info h2 {
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #020344;
 }
 
 .inner_chart_info ul {
   display: flex;
   margin-left: -30px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .inner_chart_info ul li {
@@ -90,10 +129,7 @@
   color: #ff9898;
   font-weight: 600;
   font-size: 18px;
+  font-family: 'Poppins', sans-serif;
 }
 
-/* .inner_chart_info span img {
-  height:15px;
-  width: 15px;
-} */
 /* chart end  */
