@@ -3,14 +3,36 @@ const dataDoughnut = {
   datasets: [
     {
       label: "# of Votes",
-      data: [23, 20, 6],
-
+      data: [60, 20, 6],
       backgroundColor: ["#9791FF", "#FF5959", "lightgray"],
       borderColor: ["#9791FF", "#FF5959", "lightgray"],
-      cutout: "35",
+      cutout: "70%",
     },
   ],
 };
+
+// counter plugin block
+const counter = {
+  id: "counter",
+  beforeDraw(Chart, args, options) {
+    const {
+      ctx,
+      chartArea: { top, right, bottom, left, width, height },
+    } = Chart;
+    ctx.save();
+    ctx.fillStyle = "#020344";
+    ctx.fillRect(width, top + height / 2, 0, 10);
+    ctx.font = "25px sans-serif";
+    ctx.textAlign = "center";
+    ctx.fillStyle = "#020344;";
+    ctx.textWeight = ctx.fillText(
+      dataDoughnut.datasets[0].data[0] + "%",
+      width + 32,
+      top + 7 + height / 2
+    );
+  },
+};
+
 // config
 const doughnutConfig = {
   type: "doughnut",
@@ -20,9 +42,8 @@ const doughnutConfig = {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        id: "legendMargin",
         position: "left",
-        align: "start",
+        align: "center",
         fontSize: "14",
         labels: {
           pointStyle: "circle",
@@ -32,6 +53,7 @@ const doughnutConfig = {
       },
     },
   },
+  plugins: [counter],
 };
 
 // data redering
