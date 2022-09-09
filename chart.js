@@ -24,11 +24,10 @@ const doughnutConfig = {
         position: "left",
         align: "start",
         fontSize: "14",
-        display: "flex",
         labels: {
           pointStyle: "circle",
           usePointStyle: true,
-          padding: 12,
+          padding: 14,
         },
       },
     },
