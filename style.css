@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* mission start */
+
+.mission {
+  border: 1px solid rgb(224, 222, 222);
+  border-radius: 20px;
+  padding: 20px 10px;
+  margin: 20px 0;
+}
+.mission_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mission_reason_text {
+  font-weight: 600;
+  color: black;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.mission_title button {
+  text-transform: uppercase;
+  outline: none;
+  font-size: 14px;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.mission_title button:hover {
+  background: #080808;
+  color: white;
+  border: 2px solid rgb(12, 12, 12);
+}
+.inner_item_wrapper {
+  margin-bottom: 20px;
+}
+
+.mission_item {
+  background: #020344;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+}
+
+.mission_item p {
+  color: #c08d26;
+  font-weight: 600;
+}
+
+.mission_item p:last-child {
+  color: white;
+}
+
+/* mission end  */
+
+/* chart start  */
+/* .inner_chart_info {
+} */
+
+.inner_chart_info p {
+  color: #9cd7ef;
+  font-weight: 600;
+}
+
+.inner_chart_info h2 {
+  font-weight: bold;
+}
+
+.inner_chart_info ul {
+  display: flex;
+  margin-left: -30px;
+}
+
+.inner_chart_info ul li {
+  list-style-type: none;
+  margin-right: 10px;
+  color: #020344;
+  font-weight: bold;
+}
+
+.inner_chart_info span {
+  color: #ff9898;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* .inner_chart_info span img {
+  height:15px;
+  width: 15px;
+} */
+/* chart end  */
