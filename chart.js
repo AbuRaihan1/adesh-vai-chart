@@ -27,8 +27,8 @@ const counter = {
     ctx.fillStyle = "#020344;";
     ctx.textWeight = ctx.fillText(
       dataDoughnut.datasets[0].data[0] + "%",
-      width + 32,
-      top + 7 + height / 2
+      width + 34,
+      top + 10 + height / 2
     );
   },
 };
